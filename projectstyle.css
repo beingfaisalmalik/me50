@@ -1,0 +1,231 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+#main{
+  background-color: #212121;
+}
+nav{
+  background-color: #ffff00;
+  box-shadow:  10px 9px 6px black;
+    color: black;
+    display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+    z-index: 10;
+    width: 100%;
+
+}
+nav ul{
+  background-color: #ffff00;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  list-style: none;
+  color: black;
+
+}
+@media all and (max-width:500px)
+{
+  nav ul{
+    flex-direction: column;
+    text-align: center;
+
+    height: inherit;
+    padding: 0px;
+
+  }
+}
+
+
+
+nav ul li:hover{
+  padding: 10px 10px;
+  margin-left: 40px;
+  margin-right: 40PX;
+  color: black;
+  background-color: white;
+  transition: 0.9s;
+}
+nav ul li{
+  padding: 10px 10px;
+  margin-left: 40px;
+  margin-right: 40PX;
+
+}
+
+
+nav ul li a{
+  text-decoration: none;
+  font-size: 20px;
+   font-family: 'Alfa Slab One', cursive;
+   color:black;
+
+}
+@media all and(max-width:500px){
+
+  nav ul li a{
+    text-decoration: none;
+    font-size: 10px;
+     font-family: 'Alfa Slab One', cursive;
+     color:black;
+     padding: 0;
+
+  }
+
+}
+nav ul li a:hover{
+  text-decoration: none;
+  font-size: 20px;
+   font-family: 'Alfa Slab One', cursive;
+   color:black;
+
+
+}
+
+#project{
+  text-decoration: underline;
+  background-color: white;
+}
+
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background-color: #ffff00;
+  border-bottom: 4px solid black;
+  border-top: 4px solid black;
+
+
+
+}
+
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+
+  color: #212121;
+  font-weight: bold;
+  font-family: fantasy;
+  font-size: 40px;
+}
+
+@media (max-width: 28.75em) {
+  .projects-section-header {
+    font-size: 4rem;
+  }
+}
+
+/* "Automagic" image grid using no media queries */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  border: 5px solid black;
+    box-shadow: 5px 5px 4px black;
+}
+
+.code {
+  color: var(--main-gray);
+  transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+  color: #ff7f50;
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+
+}
+
+.btn-show-all {
+  font-size: 2rem;
+  background-color: black;
+  color: white;
+
+}
+
+.btn-show-all:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn-show-all:hover > i {
+  transform: translateX(2px);
+}
+
+.btn-show-all > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+#projects{
+  margin-top: 500px;
+  margin-bottom: 300px;
+}
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4.5rem;
+  background-color: #ffff00;
+  color:black ;
+  border-top: 6px solid black ;
+  box-shadow: 9px 10px 14px black;
+  height: 20px;
+
+}
+#name{
+  float:right;
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: bold;
+}
+#right-name{
+  float: left;
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: bold;
+  color:black;
+}
+@media (max-width: 28.75em) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}

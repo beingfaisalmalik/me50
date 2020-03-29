@@ -1,0 +1,181 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+#main{
+  background-color: #212121;
+}
+#qual{
+  background-color: white;
+  text-decoration: underline;
+}
+
+nav{
+  background-color: #ffff00;
+  box-shadow:  10px 9px 6px black;
+    color: black;
+    display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+    z-index: 10;
+    width: 100%;
+
+}
+nav ul{
+  background-color: #ffff00;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  list-style: none;
+  color: black;
+
+}
+@media all and (max-width:500px)
+{
+  nav ul{
+    flex-direction: column;
+    text-align: center;
+
+    height: inherit;
+    padding: 0px;
+
+  }
+}
+
+
+
+nav ul li:hover{
+  padding: 10px 10px;
+  margin-left: 40px;
+  margin-right: 40PX;
+  color: black;
+  background-color: white;
+  transition: 0.9s;
+}
+nav ul li{
+  padding: 10px 10px;
+  margin-left: 40px;
+  margin-right: 40PX;
+
+}
+
+
+nav ul li a{
+  text-decoration: none;
+  font-size: 20px;
+   font-family: 'Alfa Slab One', cursive;
+   color:black;
+
+}
+@media all and(max-width:500px){
+
+  nav ul li a{
+    text-decoration: none;
+    font-size: 10px;
+     font-family: 'Alfa Slab One', cursive;
+     color:black;
+     padding: 0;
+
+  }
+
+}
+nav ul li a:hover{
+  text-decoration: none;
+  font-size: 20px;
+   font-family: 'Alfa Slab One', cursive;
+   color:black;
+
+
+}
+
+
+
+
+
+ul {
+  color: #212121;
+}
+
+li {
+  color: #ffff00;
+}
+
+section ul {
+  margin: 0;
+  padding: 0;
+    list-style:circle;
+}
+section li {
+  display: list-item;
+}
+section a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration:none;
+      color:#ffff00;
+}
+#sec{
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.heading{
+  color: white;
+  font-size: 50px;
+  font-family: monospace;
+  text-align: center;
+}
+.button-basic, .button-submit, .button-report {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin:35px;
+}
+
+.button-report {
+  background-color: red;
+}
+
+.button-submit {
+  background-color: green;
+  color: white;
+}
+.container{
+  padding-top: 170px;
+}
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4.5rem;
+  background-color: #ffff00;
+  color:black ;
+  border-top: 6px solid black ;
+  box-shadow: 9px 10px 14px black;
+  height: 20px;
+
+
+}
+#name{
+  float:right;
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: bold;
+}
+#right-name{
+  float: left;
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: bold;
+  color:black;
+}
+@media (max-width: 28.75em) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=qualificationstyle.css.map */
